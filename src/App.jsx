@@ -34,16 +34,7 @@ function App() {
       : (weather.temp * 9 / 5 + 32).toFixed(0)
     : "";
 
-  if (loading || !weather) {
-    return (
-      <div className="min-h-screen bg-gray-900 flex items-center justify-center">
-        <div className="flex flex-col items-center gap-4">
-          <div className="w-16 h-16 border-4 border-white border-t-sky-500 rounded-full animate-spin shadow-lg"></div>
-          <span className="text-white font-semibold text-lg">Cargando...</span>
-        </div>
-      </div>
-    );
-  }
+
 
   return (
     <div className="min-h-screen bg-gray-900 flex items-center justify-center p-4">
